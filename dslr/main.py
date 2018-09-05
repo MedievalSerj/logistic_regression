@@ -1,5 +1,6 @@
 import sys
 from argparse import ArgumentParser
+from .describe import run as describe
 
 
 class Dispatcher:
@@ -17,7 +18,7 @@ class Dispatcher:
 
     @staticmethod
     def describe(args):
-        ...
+        describe(args)
 
     @staticmethod
     def histogram(args):
